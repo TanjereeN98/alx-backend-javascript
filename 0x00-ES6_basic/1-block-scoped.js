@@ -1,11 +1,12 @@
 export default function taskBlock(trueOrFalse) {
-  const task = false;
-  const task2 = true;
+  var task = false;
+  var task2 = true;
 
   if (trueOrFalse) {
-    const tasknew = true;
-    const tasknew2 = false;
+    var innerTask = true;  // Renamed variable to avoid overwriting
+    var innerTask2 = false;  // Renamed variable to avoid overwriting
   }
 
+  // The outer variables `task` and `task2` are unaffected by the block scope changes
   return [task, task2];
 }
